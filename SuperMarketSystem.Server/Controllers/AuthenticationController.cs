@@ -30,7 +30,7 @@ namespace SuperMarketSystem.Server.Controllers
         public async Task<IActionResult> SignUp([FromBody] SignUpModel model)
         {
             var userExists = await _userManager.FindByNameAsync(model.UserName);
-            if (userExists == null)
+            if (userExists != null)
             {
                 return StatusCode(StatusCodes.Status404NotFound, new Response { Status = "Error Message", Message = "Username already exists" });
             }
