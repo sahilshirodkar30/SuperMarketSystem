@@ -23,7 +23,7 @@ function LoginPage() {
 
             if (response.data?.token) {
                 localStorage.setItem('token', response.data.token);
-                alert('Login successful!');
+               // alert('Login successful!');
                 navigate('/Categories');
             } else {
                 alert('Login failed: Token not received.');

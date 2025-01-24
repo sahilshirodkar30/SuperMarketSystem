@@ -4,6 +4,8 @@ import SignupPage from './pages/SignupPage';
 import HomePage from './pages/HomePage';
 import Categories from './pages/Categories';
 import Navbar from './pages/Navbar';
+import ProductAll from './pages/ProductAll'
+import Employees from './pages/Employees'
 function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
 
@@ -21,6 +23,8 @@ function App() {
                 {isAuthenticated && (
                     <>
                         <Route path="/Categories" element={<Categories />} />
+                        <Route path="/ProductAll" element={<ProductAll />} />
+                        <Route path="/Employees" element={<Employees />} />
                     </>
                 )}
             </Routes>

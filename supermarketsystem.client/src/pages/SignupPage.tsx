@@ -14,7 +14,7 @@ function SignupPage() {
         try {
             const response = await api.post('Authentication/SignUp', formData);
             console.log('Registration response:', response.data);
-            alert('Registration successful. You can now log in.');
+           // alert('Registration successful. You can now log in.');
             setFormData({ username: '', email: '', password: '' }); // Clear form
         } catch (error) {
             console.error('Registration error:', error);

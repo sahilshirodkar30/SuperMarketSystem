@@ -94,7 +94,7 @@ namespace SuperMarketSystem.Server.Controllers
                 try
                 {
                     // Define the directory to store the images
-                    var imagesDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                    var imagesDirectory = Path.Combine(Directory.GetCurrentDirectory(), "C:/Users/sahil/OneDrive/Desktop/Project/SuperMarketSystem/supermarketsystem.client/public/Images/Employee");
                     if (!Directory.Exists(imagesDirectory))
                     {
                         Directory.CreateDirectory(imagesDirectory);
@@ -112,7 +112,7 @@ namespace SuperMarketSystem.Server.Controllers
                     }
 
                     // Set the image URL
-                    employee.ImageUrl = $"/images/{uniqueFileName}";
+                    employee.ImageUrl = $"/Images/Employee/{uniqueFileName}";
                 }
                 catch (Exception ex)
                 {
@@ -162,7 +162,7 @@ namespace SuperMarketSystem.Server.Controllers
                 try
                 {
                     // Define the directory to store the images
-                    var imagesDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                    var imagesDirectory = Path.Combine(Directory.GetCurrentDirectory(), "C:/Users/sahil/OneDrive/Desktop/Project/SuperMarketSystem/supermarketsystem.client/public/Images/Employee");
                     if (!Directory.Exists(imagesDirectory))
                     {
                         Directory.CreateDirectory(imagesDirectory);
@@ -180,7 +180,7 @@ namespace SuperMarketSystem.Server.Controllers
                     }
 
                     // Update the image URL
-                    existingEmployee.ImageUrl = $"/images/{uniqueFileName}";
+                    existingEmployee.ImageUrl = $"/Images/Employee/{uniqueFileName}";
                 }
                 catch (Exception ex)
                 {

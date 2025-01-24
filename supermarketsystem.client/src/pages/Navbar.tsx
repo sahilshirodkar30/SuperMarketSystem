@@ -27,6 +27,9 @@ const Navbar: React.FC<NavbarProps> = ({ isAuthenticated, onLogout }) => {
                             <Link to="/ProductAll">ProductAll</Link>
                         </li>
                         <li>
+                            <Link to="/Employees">Employees</Link>
+                        </li>
+                        <li>
                             <button onClick={handleLogout} style={{ cursor: 'pointer' }}>
                                 Logout
                             </button>

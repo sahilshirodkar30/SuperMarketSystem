@@ -11,7 +11,7 @@ const Categories = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
     const [pageNumber, setPageNumber] = useState(1);
-    const [pageSize, setPageSize] = useState(10);
+    const [pageSize, setPageSize] = useState(5);
     const [totalPages, setTotalPages] = useState(1);
 
     const fetchClasses = async () => {
@@ -104,6 +104,7 @@ const Categories = () => {
 
     return (
         <>
+            
             <div>
                 <h1>List of Categories</h1>
             </div>
@@ -211,7 +212,8 @@ const Categories = () => {
                         </div>
                     </div>
                 )}
-            </div>
+                </div>
+         
         </>
     );
 };
